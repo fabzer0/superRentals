@@ -4,9 +4,11 @@ We hope you find exactly what you're looking for in a place to stay. <br>
 
 <ul>
   {{#each model as |rental|}}
-    {{rental-tile rental=rental}}
+    {{rental-tile rental=rental destroyRental="destroyRental"}}
   {{/each}}
 </ul>
+
+{{new-rental saveRental2="saveRental3"}}
 
 {{#link-to 'about'}}About{{/link-to}} <br>
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
