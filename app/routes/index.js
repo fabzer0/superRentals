@@ -27,6 +27,6 @@ var rentals = [{
 
 export default Ember.Route.extend({
   model() {
-    return rentals;
+    return this.store.findAll('rental');
   },
 });

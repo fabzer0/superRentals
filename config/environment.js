@@ -2,8 +2,8 @@
 'use strict';
 
 module.exports = function(environment) {
-  let ENV = {
-    modulePrefix: 'super-rentals', 
+  var ENV = {
+    modulePrefix: 'super-rentals',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
