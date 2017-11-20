@@ -15,6 +15,7 @@ export default Ember.Component.extend({
         type: this.get('type'),
         image: this.get('image'),
         bedrooms: this.get('bedrooms'),
+        cost: parseInt(this.get('cost'))
       };
       this.set('addNewRental', false);
       this.sendAction('saveRental2', params);
