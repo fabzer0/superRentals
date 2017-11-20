@@ -5,7 +5,7 @@ available by arrangement through {{rental.owner}}. <br>
 
 <h2>Reviews</h2>
 <ul>
-  {{#each rental.reviews as |review|}}
+  {{#each sortedReviews as |review|}}
     {{review-tile review=review destroyReview="destroyReview"}}
   {{/each}}
 </ul>
